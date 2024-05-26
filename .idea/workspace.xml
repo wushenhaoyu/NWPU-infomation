@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f2cd36f9-3a35-490e-b925-a9ad2caf16ba" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/templates/in.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/in.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/templates/out.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/out.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/templates/patientInHospital.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/patientInHospital.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/templates/patientOutHospital.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/patientOutHospital.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infomation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/infomation/urls.py" afterDir="false" />
     </list>
@@ -114,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716644178362</updated>
-      <workItem from="1716644179747" duration="24402000" />
+      <workItem from="1716644179747" duration="37376000" />
     </task>
     <servers />
   </component>

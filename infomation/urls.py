@@ -27,5 +27,8 @@ urlpatterns = [
     path("patientOutHospital/", views.patientOutHospital_view, name='patientOutHospital'),
     path("in/", views.in_view, name='in'),
     path("out/", views.out_view, name='out'),
-
+    path("inHospital/", views.inHospital, name='inHospital'),
+    path("outHospital/", views.outHospital, name='outHospital'),
+    path("getPatientInHospital/", views.get_patient_in_hospital, name='getPatientInHospital'),
+    path("getPatientOutHospital/", views.get_patient_out_hospital, name='getPatientOutHospital')
 ]
