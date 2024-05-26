@@ -11,6 +11,20 @@ def login_view(request):
 def register_view(request):
     return render(request, 'register.html')
 
+def main_view(request):
+    return render(request, 'main.html')
+
+def patientInHospital_view(request):
+    return render(request, 'patientInHospital.html')
+
+def patientOutHospital_view(request):
+    return render(request, 'patientOutHospital.html')
+
+def in_view(request):
+    return render(request, 'in.html')
+
+def out_view(request):
+    return render(request, 'out.html')
 
 
 

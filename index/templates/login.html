@@ -83,6 +83,10 @@
         if (response.ok) {
             // 登录成功，根据实际情况处理响应
             console.log('登录成功:', data);
+            if(data.status)
+            {
+                window.location.href = '/main/'
+            }
             // 可能重定向到首页或展示成功信息
         } else {
             // 登录失败，根据实际情况处理错误
