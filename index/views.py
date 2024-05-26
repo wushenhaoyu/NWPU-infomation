@@ -125,13 +125,20 @@ def outHospital(request):
             # 获取患者的住院记录
             patient_in_hospital = PatientInHospital.objects.get(patient=patient)
 
-            # 出院操作
-            patient_in_hospital.OutHospital() # 假设你有一个这样的方法在PatientInHospital模型中
-            patient_in_hospital.save()
+            # 创建出院记录
+            out_hospital = PatientOutHospital(
+                patient=patient,
+                timeInHospital=patient_in_hospital.timeInHospital,
+                TimeOutHospital=timezone.now(),
+            )
+            out_hospital.save()
+
+            # 删除住院记录
+            patient_in_hospital.delete()
 
             return JsonResponse({'status': 1, 'message': '成功出院'})
 
-        except ObjectDoesNotExist:
+        except Patient.DoesNotExist:
             return JsonResponse({'status': 0, 'message': '患者不存在'})
 
     else:

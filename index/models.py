@@ -30,12 +30,11 @@ class PatientInHospital(models.Model):
             timeInHospital=self.timeInHospital,
             TimeOutHospital=timezone.now(),
         )
-        out_hospital.save()
+        out_hospital.save()  # 确保保存到数据库
 
-        # 删除对应的PatientInHospital记录
+        # 直接在这里删除对应的PatientInHospital记录
         self.delete()
 
-# 使用信号处理器来监听PatientOutHospital的保存操作
 @receiver(signals.post_save, sender=PatientOutHospital)
 def delete_patient_in_hospital(sender, instance, created, **kwargs):
     if created:
@@ -43,6 +42,5 @@ def delete_patient_in_hospital(sender, instance, created, **kwargs):
         in_hospital = PatientInHospital.objects.filter(patient=instance.patient, timeInHospital=instance.timeInHospital).first()
         if in_hospital:
             in_hospital.delete()
-
 
 
